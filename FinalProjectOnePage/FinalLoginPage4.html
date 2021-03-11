@@ -1,0 +1,246 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!doctype html>
+<html lang="en">
+  <head>
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	<!--FOR IMPORTING GOOGLE FONTS -->
+		
+	<link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"> <!--raleway -->
+		
+	<link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet"> <!-- Montaga SERIF -->
+	
+    <title>April's Shoe Universe</title>
+				
+				<!-- FOR THE STYLING -->
+				<style type = "text/CSS">
+				
+				
+					body {
+						font-family: 'Raleway', sans-serif; 
+						font-color: #A8D0E6;
+						font-size: 20px;
+						background-color: #CAEBF2; <!-- "EGGSHELL" = Light blue--> 
+					}
+	
+					h1{
+								
+						font-family: 'Tangerine', cursive; 
+					}
+
+
+					h2{
+						font-family: 'Montaga', serif;
+					}
+					
+					<!-- FOR STYLING BY CLASS -->
+					.jumbotron {background-color: #FFF7C0;}
+					
+					.paragraphCaring{
+						font-size: 50px;
+						background-color: #29648A;
+						align: right;
+					}
+
+					.caring {
+						background-color: #E7717D;
+					}
+				
+					.youMatter{
+						font-size: 100px;
+					}
+					
+				
+				<!-- FOR STYLING BY ELEMENT ID-->
+									
+					#myTable {
+					
+						background-color: #FFF7C0;
+					}
+						
+				</style>
+
+    <title>Payment Page</title>
+
+  </head>
+
+  <body>
+<h1 class id="headOne">Welcome to April's Shoe Universe</h1>
+
+			<!-- NAVBAR> -->
+	<nav class="navbar navbar-expand-lg navbar-medium bg-medium">
+		<a class="navbar-brand" href="HomeReal8.php">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+	<!-- NAVBAR -->
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="FinalLoginPage4.html">Login<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="CorporateCaring6.html">Corporate Caring</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="shoeTable3.php">Show Me ALL SHOES!</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="FinalAboutUs2.html">About Us</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+
+<!-- ALLOW CUSTOMER TO ENTER THE LOGIN DETAILS AND HAVE LOGIN DETAILS VALIDATED VIA A LOGIN SCREEN BEFORE RECEIVING A SUMMARY OF THE ORDER -->
+<!-- THIS IS ALLOWED, NOT REQUIRED -->
+    <h1 align="center" id="PaymentPageTitle" class="youMatter">Login Page</h1>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h2>I'm new. I need to register.</h2>
+				<form name = "newForm" >
+
+			<div class="form-group">
+				<label for="newEmail">Email address</label>
+				<input type="email" class="form-control" id="newEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+			</div>
+			<div class="form-group">
+				<label for="newPasswordOne">Pick a Password</label>
+				<input type="password" class="form-control" id="newPasswordOne" name="newPassword" placeholder="Password" required>
+			</div>
+			<div class="form-group">
+				<label for="newPasswordTwo">Type The Password Again, Please.</label>
+				<input type="password" class="form-control" id="newPasswordTwo" name = "newPasswordAgain" placeholder="Password" required>
+			</div>
+
+		<button type="submit" class="btn btn-primary" onclick = "newCustomer()">Submit</button>
+		</form>
+    </div>
+
+    <div class="col">
+<!-- FOR RETURN USERS -->		
+		<h2>I'm back.</h2>
+		<form>
+			<div class="form-group">
+				<label for="inputEmail1">Email address</label>
+				<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword1">Password</label>
+				<input type="password" class="form-control" id="inputPassword1" placeholder="Password" required>
+			</div>
+		<button type="submit" class="btn btn-primary" onclick = "customer()">Submit</button>
+		</form>
+    </div>
+  </div>
+
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script>
+    	
+	/*IF THIS WAS A "REAL WORLD" PAGE, THIS FORM WOULD NEED TO CONNECT TO A DATABASE TO VALIDATE THE PASSWORD. PHP WOULD BE NECESSARY TO DO THIS. 
+	THAT SAID, FOR THIS EXERCISE, WE WERE DIRECTED TO ACCOMPLISH FORM VALIDATION IN HTML AND JAVASCRIPT, WHICH IS VERY USEFUL AS IT REQUIRES ALL THE 
+	NECESSARY INFORMATION TO BE PROVIDED BY THE USER BEFORE SENDING THE DATA TO THE SERVER. 
+	*/
+		
+	//FORM VALIDATION THROUGH HTML FOR RETURN USERS TO ENSURE TEXT FIELDS ARE NOT EMPTY
+	//AND A VALID EMAIL IS ENTERED (LOGIN DETAILS HARDCODED)
+	
+	function customer(){
+		var customerEmail = document.getElementById("inputEmail1").value;
+		var customerPassword = document.getElementById("inputPassword1").value;
+		
+		//HARD CODED LOGIN DETAILS FOR RETURN USER
+		if (customerEmail !== "fred@freddiemercury.com"){
+			window.alert("Oops! Not your email with us. Please try again.");
+			customerPassword.focus();
+			return false;
+		}
+		
+		if (customerPassword !== "KillerQueen!"){
+			window.alert("Oops! Not your password with us. Please try again.");
+			customerPassword.focus();
+			return false;
+		} else {
+			window.alert("Welcome back, Freddie! We missed you!");
+		}
+	}
+	
+	//FORM VALIDATION JAVASCRIPT FOR SOME ELEMENTS TO ENSURE TEXT FIELDS ARE NOT EMPTY, A VALID EMAIL IS ENTERED
+	
+	function newCustomer(){
+		var email = document.getElementById("newEmail");
+			
+		if (email.value.indexOf(".",0)<0)
+		{
+			window.alert("Oops! Please enter your email.");
+			email.focus();
+			return false;
+		}
+
+		if (email.value.indexOf("@",0)<0)
+		{
+			window.alert("Oops! Please enter a valid email address.");
+			email.focus();
+			return false;
+			
+		} 	
+		
+		if (newForm.newPassword.value !== newForm.newPasswordAgain.value)
+		{
+			window.alert("Oops! Please make sure the passwords match.");
+			newpass.focus();
+			return false;
+		}else {
+			window.alert("Thank you for registering!");
+		}
+	}
+/*		
+	function save()
+	{
+			//OBJECT TO STORE DATA
+			var paymentPreference = {
+				email: "april",
+				preferredPayment: "april"
+			};
+			
+			var person = new paymentPreference();
+			
+			person.email = document.getElementById("Email");			
+			person.preferredPayment = document.getElementById("PaymentType");
+			
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("ep", "pp");
+				//RETRIEVE TO ALERT USER
+				window.alert("Thank you! Your payment preference for email address " + person.email + " is " + person.preferredPayment; 
+			} else {
+				window.alert("Your browser doesn't support storing info. So sorry! But keep coming back. :)");
+			} */
+	//}
+
+      </script>      
+ 
+ </body>
+</html>

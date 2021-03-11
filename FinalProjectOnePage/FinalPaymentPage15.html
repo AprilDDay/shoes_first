@@ -1,0 +1,256 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!doctype html>
+<html lang="en">
+  <head>
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	<!--FOR IMPORTING GOOGLE FONTS -->
+		
+	<link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"> <!--raleway -->
+		
+	<link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet"> <!-- Montaga SERIF -->
+	
+    <title>April's Shoe Universe</title>
+				
+				<!-- FOR THE STYLING -->
+
+				<style type = "text/CSS">
+				
+				body {
+						font-family: 'Raleway', sans-serif; 
+						font-color: #A8D0E6;
+						font-size: 20px;
+						background-color: #CAEBF2; <!-- "EGGSHELL" = Light blue--> 
+					}
+	
+					h1{
+								
+						font-family: 'Tangerine', cursive; 
+					}
+
+
+					h2{
+						font-family: 'Montaga', serif;
+					}
+					
+					<!-- FOR STYLING BY CLASS -->
+					.jumbotron {background-color: #FFF7C0;}
+					
+					.paragraphCaring{
+						font-size: 50px;
+						background-color: #29648A;
+						align: right;
+					}
+
+					.caring {
+						background-color: #E7717D;
+					}
+				
+					.youMatter{
+						font-size: 100px;
+					}
+					
+				
+				<!-- FOR STYLING BY ELEMENT ID-->
+									
+					#myTable {
+					
+						background-color: #FFF7C0;
+					}
+										
+				</style>
+
+    <title>Payment Page</title>
+
+  </head>
+
+  <body>
+<h1 class id="headOne">Welcome to April's Shoe Universe</h1>
+
+			<!-- NAVBAR> -->
+	<nav class="navbar navbar-expand-lg navbar-medium bg-medium">
+		<a class="navbar-brand" href="HomeReal8.php">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+	<!-- NAVBAR -->
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="FinalLoginPage4.html">Login<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="CorporateCaring6.html">Corporate Caring</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="shoeTable3.php">Show Me ALL SHOES!</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="FinalAboutUs2.html">About Us</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+
+    <h1 align="center" id="PaymentPageTitle" class="youMatter">Payment Page</h1>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h2>I'm new.</h2>
+				<form name = "myForm" onsubmit = "validate()">
+				<div class="form-group">
+					<table cellspacing = "2" cellpadding = "2" border = "0">
+            
+						<tr>
+							<td align = "left">Name</td>
+							<td><input type = "text" name = "Name" id = "Name" class="paymentBox" required></td>
+						</tr>
+            
+						<tr>
+							<td align = "left">Email</td>
+							<td><input type = "Text" name = "EMail" id="Email" class="paymentBox" required></td>
+						</tr>
+            
+						<tr>
+							<td align = "left">Street Address</td>
+							<td><input type = "text" name = "Street" id="Street" class="paymentBox" required></td>
+						</tr>
+            
+						<tr>
+							<td align = "left">Payment Type</td>
+							<td>
+							<select name = "PaymentType" id="PaymentType" required>
+								<option value = "-1" selected>[choose yours]</option>
+								<option value = "1">Visa</option>
+								<option value = "2">Mastercard</option>
+								<option value = "3">PayPal</option>
+								<option value = "4">Apple Pay</option>
+							</select>
+							</td> 
+						</tr>
+             
+						<tr>
+							<td align = "left">Card Number(if issue with PayPal/Apple Pay)</td>
+							<td><input type = "text" name = "Card" id="Card" class="paymentBox"></td> 
+						</tr>
+			
+						<tr>
+							<td align = "left">Exp. of Card(if issue with PayPal/Apple Pay)</td>
+							<td><input type = "text" placeholder = "date" id="Expiration" class="paymentBox"></td> 
+						</tr>
+
+						<tr>
+							<td align = "right"></td>
+							<td><button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+						</tr>
+					</table>
+					</form>      
+				</div>
+			</div>
+
+    <div class="col">
+	
+<!-- FOR RETURN USERS -->		
+		<h2>I'm back for more.</h2>
+		<form>
+			<div class="form-group">
+				<label for="inputEmail1">Email address</label>
+				<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword1">Password</label>
+				<input type="password" class="form-control" id="inputPassword1" placeholder="Password" required>
+			</div>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+				<label class="form-check-label" for="checkOut">Check me out</label>
+			</div>
+		<button type="submit" class="btn btn-primary" onclick = "customer()">Submit</button>
+		</form>
+    </div>
+  </div>
+
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script>
+    	
+	//FORM VALIDATION THROUGH HTML FOR RETURN USERS TO ENSURE TEXT FIELDS ARE NOT EMPTY
+	//AND A VALID EMAIL IS ENTERED (LOGIN DETAILS HARDCODED)
+	
+	function customer(){
+		var customerEmail = document.getElementById("inputEmail1").value;
+		var customerPassword = document.getElementById("inputPassword1").value;
+		
+		//HARD CODED LOGIN DETAILS FOR RETURN USER
+		if (customerEmail !== "fred@freddiemercury.com"){
+			window.alert("Oops! Not your email with us. Please try again.");
+			customerPassword.focus();
+			return false;
+		}
+		
+		if (customerPassword !== "KillerQueen!"){
+			window.alert("Oops! Not your password with us. Please try again.");
+			customerPassword.focus();
+			return false;
+		} else {
+			window.alert("Thank you for coming back! Your shoes are on the way.");
+		}
+	}
+	
+	//FORM VALIDATION JAVASCRIPT FOR SOME ELEMENTS TO ENSURE TEXT FIELDS ARE NOT EMPTY, A VALID EMAIL IS ENTERED
+	//ELEMENTS: EMAIL, CARD INFO, 
+	
+	function validate(){
+	var email = document.forms["myForm"]["Email"];
+	var cardNumber = document.getElementById("Card").value;
+	var cardExpiration = document.getElementById("Expiration").value;
+	
+		if (email.value.indexOf(".",0)<0)
+		{
+			window.alert("Oops! Please enter your email.");
+			email.focus();
+			return false;
+		}
+
+		if (email.value.indexOf("@",0)<0)
+		{
+			window.alert("Oops! Please enter a valid email address.");
+			email.focus();
+			return false;
+		}
+		
+		if (cardNumber !== null && (isNaN(cardNumber) || (cardExpiration.length == 0))){
+			window.alert("Please enter valid card details.");
+			cardNumber.focus();
+			return false;	
+			
+		} 	else {
+			window.alert("Thank you for your payment! Your shoes are on the way!");
+		}
+	}
+
+      </script>      
+ 
+ </body>
+</html>
